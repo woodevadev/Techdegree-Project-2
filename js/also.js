@@ -23,17 +23,6 @@ function numberOfSets(numberOfEntries){
     return sets;
 }
 
-//might not need this code
-// //This will return the top index of students
-// //NOT to hide
-// function whichSetsToHide(setOn, numOfSets){
-//     for(let i = 1; i < numOfSets; i ++){
-//         if(setOn == i){
-//             return (i * numberToShow);
-//         }
-//     }
-// }
-
 //Since all of the students are hidden
 //This variabe will show the ones that are supposed
 //to be shown based on the top index
