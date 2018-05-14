@@ -80,10 +80,15 @@ let $liSelector = $('.pagination ul li');
 //Selects all of the a tags in the pagination div
 let $aSelector = $('.pagination ul li a');
 
+//Initializes page with the first ten students
+showStudents(10);
+
+//Handles click the page number click event
 $ulSelector.on('click', function(event){
     //Rehide all list items
     $listItems.hide();
-
+    //Show the appropriate students
+    showStudents(($(event.target).text()) * 10);
     //This should remove the class from each list item
     //Thereby removing the active class
     $aSelector.each(function(index){
